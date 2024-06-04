@@ -34,7 +34,7 @@ class Habilidad{
         void setDios(string);
         void setRareza(string);
         void setEfecto(string);
-        virtual void mostrarInfo();
+        virtual void mostrarInfo()=0;
 };
 Habilidad::Habilidad(){
     nombre="";
