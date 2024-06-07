@@ -100,3 +100,4 @@ void Build::mostrarHabilidades(){
         habilidades[i]->mostrarInfo();
     }
 }
+#endif
