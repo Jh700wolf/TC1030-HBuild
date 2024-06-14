@@ -59,6 +59,7 @@ int main(){
             }
             else{
                 cout<<"Ahora estas trabajando en la Build: "<<endl;
+                cout<<buildTrabajada<<endl;
             }
         }
         else if (des==5){
