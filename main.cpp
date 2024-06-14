@@ -63,7 +63,9 @@ int main(){
         }
         else if (des==5){
             ciclo=false;
+            almacenamientoBuilds.~Almacenamiento();
         }
     }
     
 }
+
