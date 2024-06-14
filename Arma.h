@@ -4,7 +4,7 @@ Proyecto Builds de Hades
 José Pablo Gonzalez Avila
 A01706819
 23/05/2023
-
+Esta clase define los objetos tipo arma. Contiene solo los metodos de esta clase.
 */
 
 #ifndef ARMA_H_
@@ -19,15 +19,15 @@ using namespace std;
 
 //Declaracion de la clase Arma. 
 class Arma {
+    //Se declaran las variables 
     private:
         string nombre;
         string aspecto;
         int nivel;
-
+    /*Se declaran los metodos de la clase. Son modificadores de acceso y constructores*/
     public:
-        Arma();
-        Arma(string, string);
-        Arma(string, string, int);
+        Arma(); //Constructor Default
+        Arma(string, string, int); //Constructor 
         string getNombre() {return nombre;}
         string getAspecto() {return aspecto;}
         int getNivel() {return nivel;}
@@ -43,10 +43,7 @@ Arma::Arma(){
     nivel=1;
 
 }
-Arma::Arma(string nombre_, string aspecto_){
-    nombre=nombre_;
-    aspecto=aspecto_;
-}
+
 Arma::Arma(string nombre_, string aspecto_, int nivel_){
     nombre=nombre_;
     aspecto=aspecto_;
@@ -67,3 +64,4 @@ void Arma::setNivel(int nivel_){
 
 
 #endif
+
