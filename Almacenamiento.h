@@ -28,6 +28,7 @@ class Almacenamiento{
     para crear una build, metodo para mostrarla, metodo para agregar una Habilidad,
     metodo para mostrar la info de la Build, etc.*/
         Almacenamiento():numBuilds(0) {};
+        ~Almacenamiento();
         void crearBuild();
         void mostrarBuilds();
         void agregarHabBuild(int);
@@ -35,6 +36,11 @@ class Almacenamiento{
         int getNumBuilds(){return numBuilds;}
 };
 
+Almacenamiento::~Almacenamiento() {
+    for (int i = 0; i < numBuilds; ++i) {
+        delete build[i]; // Liberar la memoria asignada a cada Build
+    }
+}
 /*
 mostrarBuildEspecifica es una funcion la cual recibe la posicion de una build en el
 arreglo y despues regresa el nombre de la build y sus habilidades.
